@@ -1,6 +1,8 @@
 # Frontend for SPA «ПомойАвто»
 
-## Launch on localhost
+It is a frontend for single page application. Reach JavaScript is present.
+
+# Deploy on localhost
 
 Example of frontend launch on Linux, Python 3.5:
 
@@ -11,7 +13,7 @@ python3 -m http.server
 
 Open page [127.0.0.1:8000](http://127.0.0.1:8000) in browser.
 
-## Deploy on production server
+# Deploy on production server
 
 [TODO. Deploy scripts will written later]
 
