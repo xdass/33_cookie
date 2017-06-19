@@ -30,7 +30,7 @@
       </form>
       <p class="top50">
         <div>Уже пользовались услугами «ПомойАвто»?</div>
-        <a href="/signin" data-navigo>Войти</a>
+        <a href="#/signin">Войти</a>
       </p>
     </div>
   </div>
@@ -50,9 +50,10 @@
       event.preventDefault()
 
       var riotTag = this
+      var formElement = event.target
       fetch(window.getAPIUrl('/signup'), {
         method: 'POST',
-        body: new FormData(event.target)
+        body: new FormData(formElement)
       }).then(function(response) {
         if (response.status==200){
           window.go2page('/')

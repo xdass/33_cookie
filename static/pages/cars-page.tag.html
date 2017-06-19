@@ -4,7 +4,7 @@
       <h2>Ваши автомобили</h2>
       <ul>
         <li each={car in cars}>
-          <a href="'/car/' + {car.id}" data-navigo>{car.title}</a>
+          <a href={'#/car/' + car.id}>{car.title}</a>
         </li>
       </ul>
       <p show={!cars.length}>Список автомобилей пуст</p>

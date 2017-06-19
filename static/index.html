@@ -123,8 +123,9 @@
     <div class="header clearfix">
       <nav>
         <ul class="nav nav-pills pull-right">
-          <li role="presentation" class="active"><a href="/" data-navigo>Мои автомобили</a></li>
-          <li role="presentation"><a href="/cars" data-navigo>Регистрация</a></li>
+          <!-- TODO вынести шапку в riot tag и добавить логику -->
+          <li role="presentation" class="active"><a href="#/">Мои автомобили</a></li>
+          <li role="presentation"><a href="#/signup">Регистрация</a></li>
         </ul>
       </nav>
       <h3 class="text-muted">ПомойАвто</h3>
@@ -161,8 +162,9 @@
     var mountPoint = document.getElementById('page-container')
 
     // initialize JS router
-    var root = null;
-    var router = new Navigo(root);
+    var root = null
+    var useHash = true
+    var router = new Navigo(root, useHash)
 
     window.go2page = function(url){
       router.navigate(url);
