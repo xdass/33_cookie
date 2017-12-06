@@ -6,7 +6,7 @@
       <div class="alert alert-danger" role="alert" show={errorMsg}>
         {errorMsg}
       </div>
-      <form onsubmit={submit}>
+      <form onsubmit={submit} method="POST">
         <div class="form-group">
           <label for="phoneEmailSignup">Ваш Email</label>
           <input id="phoneEmailSignup" name="email" class="form-control" type="email" required="required">
@@ -51,8 +51,10 @@
 
       var riotTag = this
       var formElement = event.target
-      fetch(window.getAPIUrl('/signup'), {
+      fetch(window.getAPIUrl('/signup/'), {
         method: 'POST',
+        mode: 'cors',
+        credentials: 'include',
         body: new FormData(formElement)
       }).then(function(response) {
         if (response.status==200){
