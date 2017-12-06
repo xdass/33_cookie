@@ -8,14 +8,10 @@ Example of frontend launch on Linux, Python 3.5:
 
 ```bash
 cd static/
-python3 -m http.server
+python3 -m http.server 9000
 ```
 
 Open page [localhost:9000](localhost:9000) in browser.
-
-# Deploy on production server
-
-[TODO. Deploy scripts will written later]
 
 # Project Goals
 
