@@ -11,7 +11,7 @@ cd static/
 python3 -m http.server
 ```
 
-Open page [127.0.0.1:9000](http://127.0.0.1:9000) in browser.
+Open page [localhost:9000](localhost:9000) in browser.
 
 # Deploy on production server
 
